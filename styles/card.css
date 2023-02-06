@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fon-fam-roboto: "Roboto", sans-serif;
+
+    --color-medium-gray: #707070;
+    --color-wheit: #fff;
+    --color-black: #110902 ;
+    --color-orange: #DE5216 ;
+}
+/*--------------------------*/
+.mobil-card-warpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobil-card-sec-1 {
+
+    margin: 2.5rem 7rem;
+
+    border-radius: 2rem 2rem 2rem;
+    background-color: var(--color-black);
+}
+.mobil-card-img {
+    min-height: 30vh;
+
+    border-radius:0 2rem 0 0;
+
+    background-image: url('../images/4-blur.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mobil-card-sec-2 {
+    color: white;
+    font-family: var(--fon-fam-roboto);
+}
+.mobil-card-header {
+    padding: 1rem 2rem 0;
+    font-size: 2rem;
+    color: var(--color-orange);
+}
+.mobil-card-text {
+    letter-spacing: .06rem;
+    padding: .5rem 2rem 2rem;
+}
+.laptop-card-warpper {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobil-card-warpper {
+        display: none;
+    }
+    .laptop-card-warpper {
+        display: flex;
+        justify-content: center;
+    }
+    .laptop-card {
+        margin: 5rem;
+
+        max-width: 135rem;
+        min-height: 25rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        border-radius: 0 2rem 2rem;
+
+        background-color: var(--color-black);
+
+    }
+    .laptop-card-sec-1 {
+        color: white;
+        font-family: var(--fon-fam-roboto);
+    }
+    .laptop-card-header {
+        padding: 1.5rem 3rem 0;
+        font-size: 7rem;
+        color: var(--color-orange);
+    }
+    .laptop-card-text {
+        padding: .5rem 3rem;
+        font-size: 2.6rem;
+    }
+    .laptop-card-img-wapper {
+        position: relative;
+    }
+    .laptop-card-img {
+        height: 40rem;
+        width: 100%;
+        
+        position: absolute;
+        margin: -10rem 0;
+        z-index: 10;
+        
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url('../images/4-blur.jpg');
+    }
+}

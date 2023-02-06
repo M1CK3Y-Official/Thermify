@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fon-fam-roboto: "Roboto", sans-serif;
+
+    --color-medium-gray: #707070;
+    --color-wheit: #fff;
+    --color-black: #110902 ;
+    --color-orange: #DE5216 ;
+}
+/*--------------------------*/
+.laptop-footer-warpper {
+    display: none;
+}
+
+.mobil-footer-warpper {
+    background-color: var(--color-black);
+    padding: 0 2rem;
+    font-family: var(--fon-fam-roboto);
+    color: aliceblue;
+}
+
+
+/*SHOME*/
+.mobil-footer-SHOME {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1.5rem, 5vw, 5rem);
+
+    padding: 1.5rem .5rem;
+}
+.icon {    
+    min-height: 4.5rem;
+    max-width: 4.5rem;
+
+    border-radius: 50%;
+    background-size: 100%;
+    
+    /*for the a tag to fit its child's content*/
+    width: 100%;
+}
+
+.facebook {
+    background-image: url('../assets/icons/f_logo_RGB-Blue_1024.svg');
+}
+
+.instagram {
+    border-radius: 50%;
+}
+
+.twitter {
+    background-image: url('../assets/icons/Twitter-blue.svg');
+}
+
+.youtube {
+    background-image: url('../assets/icons/youtube-icon.svg');
+}
+/*-----------------------------------------*/
+
+/*email / newsletters*/
+.mobil-footer-form {
+    font-size: clamp(2rem, 10vh, 2.5rem);
+    margin: 0 0 4rem ;
+
+}
+
+.form-warpper {
+    margin: 1rem 0;
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.email {
+    min-height: clamp(3rem, 10vw, 4rem);
+    min-width: clamp(100%, 10vw, 35rem);
+
+    padding: 0 1rem;
+
+    border: none;
+    border-radius: 0;
+    font-size: 1.2rem;
+}
+.email-send-btn {
+    position: absolute;
+    
+    height: clamp(3rem, 10vw, 5rem);
+    min-width: clamp(3rem, 20vw, 10rem);
+
+    border: none;
+    border-radius: 5rem 0 0 0;
+
+    color: var(--color-black);
+    font-size: clamp(0.5rem, 1.5vh, rem);
+    font-weight: 700;
+    background-color: var(--color-orange);
+}
+@media only screen and (max-width: 280px) {
+    .email-send-btn {
+        border-radius: 1.5rem 0 0 0;
+        min-width: 2.5rem;
+        font-size: .6.5rem;
+    }
+}
+.email-send-btn :hover {
+    background-color: #9F2A00;
+}
+                        
+/*---------------------------------*/
+/**/
+.line-b {
+    height: 0.1rem;
+    background-color: var(--color-medium-gray);
+}
+.box-cont-menu-header, .box-cont-menu-header2 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 2.5rem;
+    scroll-behavior: auto;
+    margin: 1rem 0;
+}
+.box-cont-menu-footer.active, .box-cont-menu-footer2.active {
+    display: block;
+}
+
+.box-cont-menu-footer, .box-cont-menu-footer2 {
+    display: none;
+}
+/*---------------------------------*/
+/*footer menu icon*/
+.icon-1-bar1, .icon-2-bar1 {
+    min-width: 1.2rem;
+    min-height: 0.17rem;
+        
+    transform: translateY(0.17rem);
+
+    background-color: aliceblue;
+}
+.icon-1-bar2, .icon-2-bar2 {
+    min-width: 1.2rem;
+    min-height: 0.17rem;
+    
+    transform: rotate(-90deg);
+
+    background-color: aliceblue;
+}
+.icon-1-bar2.rotate, .icon-2-bar2.rotate {
+
+    transform: rotate(180deg);
+    transition-duration: 0.4s;
+}
+.menu-footer-dropdwon p {
+    padding: 1rem 1rem 1rem 2rem;
+}
+.menu-footer-dropdwon :nth-last-child(1) {
+    padding: 1rem 1rem 2rem 2rem;
+}
+/*----------------------------*/
+.back-to-top-wapper {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 1rem;
+}
+.test {
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+}
+.back-to-top {
+    min-width: 5rem;
+    min-height: 5rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5rem;
+    border: 0.1rem solid #757575;
+    background-color:white;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1.6rem solid rgb(91, 91, 91);
+}
+
+.copy {
+    padding: 1rem;
+    font-size: clamp(0.8rem, 10vh, 1.2rem);
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .laptop-footer-warpper {
+        display: block;
+        font-family: var(--fon-fam-roboto);
+    }
+    .mobil-footer {
+        display: none;
+    }
+
+    .laptop-footer-warpper {
+        padding: 4rem 4rem 0;
+        display: grid;
+        justify-content: center;
+
+        color: var(--color-wheit);
+        background-color: var(--color-black);
+    }
+    .laptop-menu-header {
+        padding: 3rem 0;
+        font-size: clamp(2rem, 100vh, 4rem);
+    }
+    .laptop-menu-text {
+        font-size: clamp(1rem, 10vh, 1.8rem);
+        text-decoration: none;
+        line-height: 1.5rem;
+        padding: 0 0 clamp(1rem, 10vh, 3rem);
+        color: var(--color-wheit);
+        display: block;
+    }
+    .laptop-footer-menu {
+        display: grid;
+        grid-template-columns: 1fr .5rem 1fr .5rem 2.5fr;
+        gap: 3rem;
+        padding: 3rem 0rem;
+    }
+    .line-v {
+        max-width: .1rem;
+
+        background-color: var(--color-medium-gray);
+    }
+    .email {
+        min-height: 5rem;
+        padding: 0 1rem;
+    }
+    .email-send-btn {
+        min-width: 15rem;
+    }
+    
+
+    .mobil-footer-SHOME {
+        display: flex;
+        justify-content: flex-start;
+
+        gap: clamp(1rem, 5vw, 2+rem);
+        padding: 1rem 0;
+    }
+    .icon {    
+        min-height: clamp(1.5rem, 10vw, 4.5rem);
+        max-width: clamp(1.5em, 10vw, 4.5rem);
+    
+        border-radius: 50%;
+        background-size: 100%;
+        
+        /*for the a tag to fit its child's content*/
+        width: 100%;
+    }
+    .back-to-top-wapper {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 4rem 2rem;
+    }
+    .copy {
+        padding: 1rem;
+    }
+
+
+}

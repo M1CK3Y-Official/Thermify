@@ -1,0 +1,417 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 0.625rem;
+    scroll-behavior: smooth;
+  }
+
+body {
+    max-width: 425px;
+    font-size: 1.6rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    max-width: 100vw;
+    background-color: #110902;
+    display: flex;
+    justify-content: space-around;
+    gap: 75px;
+    z-index: 100;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.bag {
+    font-size: 35px;
+    margin-top: 4px;
+    color: white;
+}
+
+.sec-1 {
+    width: 100%;
+    background-image: url('../images/handbottle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec-header1 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding-top: 5vh;
+    font-size: 50px;
+}
+
+.space {
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.sec-3>.space {
+    padding: 0;
+}
+
+.sec-header2 {
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding-top: 5vh;
+    font-size: 50px;
+}
+
+h3.sub1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+h3.sub2 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align: left; 
+    width: 300px;
+    
+}
+
+.breakline {
+    width: auto;
+    height: 2px;
+    color: black;
+    background-color: black;
+    padding: 0;
+    border: none;
+}
+
+.bottle1 {
+    right: 0;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.taske {
+    display: none;
+}
+
+
+.sec-header4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 2.5vh;
+    color: #de5216;
+    font-size: 50px;
+}
+
+.sec-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card1>.card-text {
+    padding: 0 20px;
+}
+
+.cardpic {
+   width: 100%;
+   background-image: url('../images/4-blur.jpg');
+   background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    border-top-right-radius: 50px;
+}
+
+.sec-para4 {
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+
+.buy {
+    width: 150px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    background-color: #de5216;
+    font-size: 2.5rem;
+    font-weight: 600;
+    transition: 0.5s;
+    border: none;
+    margin-top: 2.5vh;
+    color: black;
+  }
+
+.buy:hover {
+  cursor: pointer;
+  box-shadow: 2.5px 2.5px 5px black;
+  transition: 0.5s; 
+}
+
+.bottleduo {
+    display: none;
+}
+
+.reklame {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.sec-para5 {
+    font-size: 1.8rem;
+    font-family: 'Roboto';
+    font-style: italic;
+}
+
+.sec-header5 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 2.5vh;
+    font-size: 5rem;
+}
+
+.sec5-pic {
+    width: 100%;
+}
+
+.sec-5>.space>.buy {
+    margin-bottom: 4rem;
+}
+  
+
+  
+
+@media only screen and (min-width: 1440px) {
+    body {
+      max-width: 100%;
+    }
+  
+    /* HEADER START */
+
+    header {
+        gap: 800px;
+    }
+
+    /* HEADER END */
+
+    .space {
+        width: 100%;
+        padding: 0px 100px;
+        text-align: justify;
+    }
+
+    .sec-3>.space {
+        padding: 0px 100px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* SEC 1 START */
+
+    .sec-1 {
+        width: 100%;
+        background-image: url('../images/handbottle.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    
+    .sec-header1 {
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 10px;
+        padding-top: 5vh;
+        font-size: 7rem;
+    }
+
+    /* SEC 1 END */
+
+    /* SEC 2 START */
+
+    .sec-header2 {
+        text-align: left;
+        font-weight: 900;
+        margin-bottom: 10px;
+        padding-top: 5vh;
+        font-size: 7rem;
+        /* position: relative; */
+    }
+
+    
+    h3.sub1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 2.6rem;
+    }
+    
+    h3.sub2 {
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: left; 
+        margin-bottom: 5rem; 
+        font-size: 2.6rem;
+        margin-top: 2.5vh;
+        /* position: relative; */
+        width: 600px;
+    }
+    
+    .breakline {
+        width: auto;
+        height: 2px;
+        color: black;
+        background-color: black;
+        padding: 0;
+        border: none;
+    }
+    
+    .bottle1 {
+        display: none;
+    }
+
+    .bottleduo {
+        width: 75%;
+        display: flex;
+        right: 0;
+        justify-content: flex-end;
+        margin-left: auto;
+        z-index: 10;
+        margin-top: 10rem;
+    }
+
+    .taske {
+        display: flex;
+        right: 0;
+        margin-left: auto;
+        margin-top: 20px;
+        width: 45%;
+        justify-content: flex-end;
+        position: absolute;
+        top: 400px;
+        z-index: -80;
+    }
+
+
+    .reklame {
+        width: 100%;
+        position: relative;
+        top: -100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .sec-header4 {
+        font-weight: 500;
+        margin-bottom: 10px;
+        padding-top: 2.5vh;
+        color: #de5216;
+        font-size: 50px;
+    }
+    
+    .sec-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card1 {
+        /* width: 80vw; */
+        width: 100%;
+        height: 75vh;
+        background-color: black;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+    
+    .card1>.card-text {
+        padding: 0 20px;
+    }
+    
+
+    .cart {
+        width: 25%;
+    }
+
+    .cardpic {
+       width: 100%;
+        height: 45vh;
+        border-top-right-radius: 50px;
+    }
+    
+    .sec-para4 {
+        color: white;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+
+    /* PETER START */
+
+    .sec-5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('../images/circle-scatter-haikei3.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -780px;
+    }
+  
+    .space {
+     width: 100%;
+    }
+  
+    .sec-header5 {
+      font-size: 7rem;
+      font-weight: 500;
+    }
+  
+    .sec-para5 {
+      font-size: 2.6rem;
+      margin-bottom: 70px;
+      font-weight: 300;
+    }
+  
+    .sec5-pic {
+      width: 50%;
+    }
+  
+    .buy {
+      width: 300px;
+      height: 70px;
+    }
+
+    /* PETER END */
+  }
+
+  .footer {
+    margin-top: 25px;
+  }
