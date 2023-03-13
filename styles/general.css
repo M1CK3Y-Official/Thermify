@@ -13,3 +13,23 @@ html {
   }
 
 
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #de5216; 
+    border: 2px solid #de521675;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #de5216; 
+  }
